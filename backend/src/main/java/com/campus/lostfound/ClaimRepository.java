@@ -1,0 +1,1 @@
+package com.campus.lostfound; import org.springframework.data.jpa.repository.JpaRepository; import java.util.List; public interface ClaimRepository extends JpaRepository<ItemClaim,Long>{List<ItemClaim> findAllByOrderByCreatedAtDesc(); List<ItemClaim> findByClaimantIdOrderByCreatedAtDesc(Long claimantId);}
